@@ -1,0 +1,117 @@
+{
+   "haeYrityksetResult" : {
+      "sivujenMaara" : 1,
+      "sivunPituus" : 1,
+      "yhteisMaara" : 1,
+      "yritykset" : {
+         "yritys" : [
+            {
+               "nimiFi" : null,
+               "code" : "4",
+               "oid" : "",
+               "osoitteet" : {
+                  "organisaatioOsoite" : [
+                     {
+                        "katuOsoite3" : "",
+                        "osoitetyyppi" : {
+                           "tekstiFi" : "Postiosoite",
+                           "tekstiSv" : "",
+                           "code" : "3",
+                           "name" : "Postiosoite - "
+                        },
+                        "postitoimipaikkaNimi" : "Tarvasjoki",
+                        "name" : "",
+                        "katuOsoite2" : "",
+                        "postinumeroKoodi" : "21450",
+                        "katuOsoite" : "Juvantie 145",
+                        "seutukunta" : "",
+                        "postilokeroTeksti" : "",
+                        "code" : "2",
+                        "yhdistys" : null,
+                        "maa" : {
+                           "maatunnusKoodiIsoNumero" : null,
+                           "nimiFi" : "Suomi",
+                           "code" : "246",
+                           "name" : "Suomi - Finland",
+                           "maatunnusKoodiIso3" : "FIN",
+                           "nimiSv" : "Finland",
+                           "maatunnusKoodi" : "FI"
+                        },
+                        "yritys" : null
+                     }
+                  ]
+               },
+               "kotimaa" : {
+                  "name" : "Suomi - Finland",
+                  "maatunnusKoodiIso3" : "FIN",
+                  "code" : "246",
+                  "nimiFi" : "Suomi",
+                  "maatunnusKoodiIsoNumero" : null,
+                  "maatunnusKoodi" : "FI",
+                  "nimiSv" : "Finland"
+               },
+               "organisaatiomuoto" : {
+                  "name" : null,
+                  "code" : null,
+                  "tekstiSv" : null,
+                  "tekstiFi" : null
+               },
+               "sahkoisetYhteystiedot" : {
+                  "organisaatioSahkoinenYhteystieto" : [
+                     {
+                        "yhteystietoTyyppi" : {
+                           "tekstiFi" : "Sähköposti",
+                           "tekstiSv" : "",
+                           "code" : "1",
+                           "name" : "Sähköposti - "
+                        },
+                        "yritys" : null,
+                        "yhteystieto" : "varhominna@hotmail.com",
+                        "code" : "1",
+                        "name" : "",
+                        "yhdistys" : null
+                     }
+                  ]
+               },
+               "yritysTunnus" : "2467503-7",
+               "nimiSv" : null,
+               "nimiEn" : null,
+               "name" : "MKV Siistix",
+               "rekisterointiPvm" : null,
+               "asiointikieli" : {
+                  "nimiFi" : "suomi",
+                  "kieliKoodi" : "Finnish",
+                  "code" : "fi",
+                  "name" : "Finnish",
+                  "nimiSv" : null
+               },
+               "puhelinnumerot" : {
+                  "organisaatioPuhelinnumero" : [
+                     {
+                        "yritys" : null,
+                        "puhelinnumeroTyyppi" : {
+                           "name" : "Puhelin - ",
+                           "code" : "5",
+                           "tekstiSv" : "",
+                           "tekstiFi" : "Puhelin"
+                        },
+                        "numero" : "045-2550222",
+                        "code" : "1",
+                        "yhdistys" : null,
+                        "name" : ""
+                     }
+                  ]
+               },
+               "kotikunta" : {
+                  "nimiSv" : "Lundo",
+                  "kuntaKoodi" : null,
+                  "name" : "Lieto - Lundo",
+                  "nimiFi" : "Lieto",
+                  "code" : "423"
+               },
+               "tunniste" : ""
+            }
+         ]
+      }
+   }
+}

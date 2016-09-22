@@ -1,0 +1,7 @@
+Received feedback from user {{ user.get_full_name }} (user.email)
+
+Subject: {{ subject }}
+---
+{{ message }}
+---
+
