@@ -1,0 +1,45 @@
+{% load i18n %}{% filter wordwrap:78 %}{% language 'fi' %}
+Hei
+
+Olet saanut tilauksen munpalvelut.fi:n kautta. Otathan yhteyttä asiakkaaseen mahdollisimman pian ja sovit tarkemmista yksityiskohdista.
+Munpalvelu.fi:ssä on mahdollista arvioida toteutettu työ. Kannattaa muistuttaa asiakasta arviointimahdollisuudesta!
+
+Työniloa!
+
+
+
+= = = = = = = = = =
+Tilauksen tiedot
+= = = = = = = = = =
+
+Tilaajan tiedot
+ - nimi: {{ order.user.get_full_name }}
+ - sähköposti: {{ order.user.email }}
+ - puhelinnumero: {{ order.user.phone }}
+
+Kohteen tiedot
+ - {{ order.site_address_street }}{% if order.site_address_street2 %}
+   {{ order.site_address_street2 }}{% endif %}
+ - {{ order.site_address_postalcode }}
+ - {{ order.site_address_city }}
+ - {% if order.site_room_count == 1%}yksi huone{% else %}{{ order.site_room_count }} huonetta{% endif %}
+ - {% if order.site_floor_count == 1%}yksi kerros{% else %}{{ order.site_floor_count }} kerrosta{% endif %}
+ - {% if order.site_sanitary_count == 1%}yksi pesutila{% else %}{{ order.site_sanitary_count }} pesutilaa{% endif %}
+ - {{ order.site_floor_area }} m²
+
+Valittu palvelu
+ - {{ order.service_package.title.fi }}
+
+Valittu päivämäärä
+ - {{ order.timeslot_start|date }}
+
+Valittu kellonaika
+ - klo {{ order.timeslot_start|time }} - {{ order.timeslot_end|time }}
+
+Lisätietoja palvelun tuottajalle:
+{{ order.extra_info }}
+
+Hinta yhteensä
+ - {{ order.price }} € (alv 24 %)
+
+{% endlanguage %}{% endfilter %}

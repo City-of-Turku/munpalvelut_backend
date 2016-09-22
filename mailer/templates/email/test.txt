@@ -1,0 +1,1 @@
+{# This is part of the mailer unit test! #}Mailer test: '{{ var }}'
