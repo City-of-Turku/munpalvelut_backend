@@ -1,0 +1,11 @@
+machine:
+  services:
+    - docker
+
+dependencies:
+  override:
+    - docker build -t tislaamo/palvelutori .
+
+test:
+  override:
+    - docker run -e PALVELUTORI_SECRET_KEY -e PALVELUTORI_DEBUG --entrypoint=python --net=host tislaamo/palvelutori manage.py test

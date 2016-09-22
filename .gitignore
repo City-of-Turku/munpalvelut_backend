@@ -1,0 +1,17 @@
+# Ignore hidden files
+.*
+!.gitignore
+!.gitattributes
+!.gitmodules
+!.dockerignore
+
+# Ignore generated files
+*.pyc
+*.mo
+*~
+
+# Ignore local configuration
+palvelutori/local_settings.py
+
+# Ignore upload and other data directories
+files/*

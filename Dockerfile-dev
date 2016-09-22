@@ -1,0 +1,18 @@
+FROM python:2.7
+ENV PYTHONUNBUFFERED 1
+
+ENV SRC_FOLDER=.
+ENV REQ_FOLDER=/usr/src/requirements
+ENV APP_FOLDER=/usr/src/app
+
+# Project requirements
+RUN mkdir -p $REQ_FOLDER
+ADD $SRC_FOLDER/requirements.txt $REQ_FOLDER
+RUN pip install --upgrade pip
+RUN pip install -r $REQ_FOLDER/requirements.txt -U
+
+WORKDIR $APP_FOLDER
+VOLUME [$APP_FOLDER]
+
+# Default command
+CMD ["python", "manage.py", "runserver", "[::]:8000"]
